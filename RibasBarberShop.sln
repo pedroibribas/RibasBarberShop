@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibasBarberShop.Domain", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibasBarberShop.Infrastructure", "RibasBarberShop.Infrastructure\RibasBarberShop.Infrastructure.csproj", "{A53B830D-BE0D-4C47-B890-2F6AF1E461D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibasBarberShop.WebApi", "RibasBarberShop.WebApi\RibasBarberShop.WebApi.csproj", "{70BA3CE9-4B79-44CD-A81A-57961CF7540D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A53B830D-BE0D-4C47-B890-2F6AF1E461D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A53B830D-BE0D-4C47-B890-2F6AF1E461D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A53B830D-BE0D-4C47-B890-2F6AF1E461D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70BA3CE9-4B79-44CD-A81A-57961CF7540D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70BA3CE9-4B79-44CD-A81A-57961CF7540D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70BA3CE9-4B79-44CD-A81A-57961CF7540D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70BA3CE9-4B79-44CD-A81A-57961CF7540D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

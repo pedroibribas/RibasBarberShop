@@ -1,0 +1,6 @@
+@RibasBarberShop.WebApi_HostAddress = http://localhost:5096
+
+GET {{RibasBarberShop.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

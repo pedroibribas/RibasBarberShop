@@ -7,14 +7,20 @@ public class ScheduledDateService(IScheduledDateRepository scheduledDateReposito
 {
     private readonly IScheduledDateRepository _scheduledDateRepository = scheduledDateRepository;
 
-    public async Task<List<ScheduledDate>> GetScheduledDates()
+    public async Task<ScheduledDate> GetScheduledDateAsync(int id)
     {
-        List<ScheduledDate> scheduledDates = await _scheduledDateRepository.List();
+        ScheduledDate scheduledDates = await _scheduledDateRepository.GetById(id);
         return scheduledDates;
     }
 
-    public async Task CreateScheduledDate(ScheduledDate scheduledDate)
+    public async Task<List<ScheduledDate>> GetScheduledDatesAsync()
     {
-        await _scheduledDateRepository.Add(scheduledDate);
+        List<ScheduledDate> scheduledDates = await _scheduledDateRepository.ListAsync();
+        return scheduledDates;
+    }
+
+    public async Task CreateScheduledDateAsync(ScheduledDate scheduledDate)
+    {
+        await _scheduledDateRepository.AddAsync(scheduledDate);
     }
 }
